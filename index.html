@@ -297,12 +297,34 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Projects</h3>
             <div class="resume-item">
-              <h4>Merkle tree-based Authentication</h4>
-              <h5>Winter '23</h5>
+              <h4>Zero-Knowledge Based Authentication for Anonymous Credential Verification</h4>
+              <h5>Fall '23</h5>
               <p><em>University of Waterloo </em></p>
               <ul>
                 <li>Devised a 2 Factor Authentication mechanism with merkle trees that can be scalable for secure user
                   authentication in web and mobile applications. Graded 'A'.</li>
+                <li>Literature Review and Research:
+                  •	Studied existing ZKP protocols such as zk-SNARKs, zk-STARKs, and Bulletproofs.
+                  •	Reviewed digital signature schemes to understand their integration with ZKPs.</li>
+                <li>Design Phase:
+                  •	Define the system architecture, including the roles of users, credential issuers, and verifiers.
+                  •	Design the protocol for issuing and verifying anonymous credentials.</li>
+                <li>Implementation Phase:
+                  •	ZKP Integration: Used libsnark to support the creation and verification of zero-knowledge proofs.
+                  •	Digital Signature Scheme: Used a digital signature scheme to incorporate ZKPs, ensuring that signatures can be verified without revealing the signer's identity.
+                  •	Credential Issuance: Wrote a simple protocol for creating anonymous credentials, ensuring that the issuer cannot trace the credentials back to the user.
+                  •	Verification System: Built the verification system that allows verifiers to authenticate credentials without learning anything about the user.
+                 <li>Testing and Evaluation:
+                  •	Functional Testing: Ensured the system works correctly, verifying that credentials can be issued and verified as intended.
+                  •	Performance Testing & Security Analaysis: Measured the system's efficiency, including the time taken to generate and verify proofs. The signature as such takes about 7 seconds, and the signature scheme signs and verifies 1000 credentials in about 1 second.  </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Merkle tree-based Authentication</h4>
+              <h5>Winter '23</h5>
+              <p><em>University of Waterloo </em></p>
+              <ul>
+                <li>The aim of this project is to develop a system that integrates zero-knowledge proofs (ZKPs) into digital signatures to create an anonymous credential verification mechanism. This system will allow users to prove their identity or authorization without revealing any additional information, enhancing privacy and security in various applications such as access control, online authentication, and secure communications.</li>
                 <li>Code commits the generated auth tokens to merkle tree hashes and retrives them upon authentication requests in a secure and reliable way. </li>
               </ul>
             </div>
